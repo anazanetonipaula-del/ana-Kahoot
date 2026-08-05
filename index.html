@@ -45,7 +45,129 @@ Começar
 <section id="quiz" class="hidden">
 
 <div class="topo">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Quiz Master</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/4ad9d1f5b5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<header>
+
+<h1>🎮 Quiz Master</h1>
+
+<p>Aprenda jogando!</p>
+
+</header>
+
+<section id="inicio">
+
+<div class="card">
+
+<h2>Bem-vindo!</h2>
+
+<input type="text" id="nome" placeholder="Digite seu nome">
+
+<button id="btnComecar">
+Começar
+</button>
+
+</div>
+
+</section>
+
+<section id="quiz" class="hidden">
+
+<div class="topo">
+<div class="barraProgresso">
+
+<div id="barra"></div>
+
+</div>
+
+<div id="progresso">
+Pergunta 1/10
+</div>
+
+<div id="tempo">
+
+⏳ <span id="timer">20</span>
+
+</div>
+
+<div id="pontos">
+
+⭐ <span id="score">0</span>
+
+</div>
+
+</div>
+
+<div class="cardPergunta">
+
+<h2 id="pergunta">
+
+Pergunta aparece aqui
+
+</h2>
+
+<div class="respostas">
+
+<button class="resposta" id="a"></button>
+
+<button class="resposta" id="b"></button>
+
+<button class="resposta" id="c"></button>
+
+<button class="resposta" id="d"></button>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="resultado" class="hidden">
+
+<div class="card">
+
+<h2>🏆 Resultado</h2>
+
+<p id="mensagemFinal"></p>
+
+<h1 id="pontuacaoFinal"></h1>
+
+<button onclick="reiniciar()">
+
+Jogar novamente
+
+</button>
+
+</div>
+
+</section>
+
+<canvas id="confete"></canvas>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+  
 <div id="progresso">
 Pergunta 1/10
 </div>
